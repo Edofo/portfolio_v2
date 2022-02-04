@@ -20,16 +20,13 @@ const About = () => {
 
    
     const checkImage = () => {
-        const img = document.querySelector('#img-about')   
-        setImgInfos({
-            width: img.width,
-            height: img.height
-        })
-    }
-
-    
-    if(imgInfos.width === '' || imgInfos.width <= 0) {
-        checkImage()
+        if(document !== undefined) {
+            const img = document.querySelector('#img-about')   
+            setImgInfos({
+                width: img.width,
+                height: img.height
+            })
+        }
     }
 
     const text = {
