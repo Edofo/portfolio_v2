@@ -17,9 +17,6 @@ const About = () => {
     
     }, [])
 
-    if(imgInfos.width === '' || imgInfos.width <= 0) {
-        checkImage()
-    }
 
    
     const checkImage = () => {
@@ -28,6 +25,11 @@ const About = () => {
             width: img.width,
             height: img.height
         })
+    }
+
+    
+    if(imgInfos.width === '' || imgInfos.width <= 0) {
+        checkImage()
     }
 
     const text = {
