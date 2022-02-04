@@ -1,0 +1,41 @@
+.contact {
+    .contactBody {
+        max-width: 1420px;
+        margin: 100px auto 200px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+
+            input, textarea {
+                background-color: var(--main-blue);
+                border: none;
+                margin: 5px 0;
+                padding: 15px;
+                max-width: 100%;
+                color: var(--main-gray-light);
+            }
+
+            textarea {
+                min-height: 100px;
+                resize: vertical;
+            }
+
+            button {
+                border: 2px solid var(--main-blue);
+                color: var(--main-gray-light);
+                padding: 15px 25px;
+                background-color: var(--main-blue);
+                width: fit-content;
+                margin: 15px 0 0 0 ;
+                align-self: center;
+                
+                &:hover {
+                    background-color: var(--main-blue-light);
+                }
+            }
+        }
+    }
+}

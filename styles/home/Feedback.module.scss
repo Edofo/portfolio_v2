@@ -1,0 +1,45 @@
+.feedback {
+    .feedbackBody {
+        max-width: 1120px;
+        width: 80%;
+        margin: 100px auto 200px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        i {
+            font-size: 60px;
+            color: var(--main-blue-light);
+            align-self: center;
+        }
+
+        .feedbackContainer {
+            display: flex;
+            position: relative;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 90%;
+                margin: 25px auto;
+                height: inherit;
+    
+                div {
+                    margin: 25px 0;
+
+                    h3 {
+                        color: var(--main-blue-light);
+                        font-size: 30px;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
