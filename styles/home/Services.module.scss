@@ -19,6 +19,7 @@
             border-radius: 8px;
             transition-duration: 0.2s;
             box-shadow: 0 0 2px 0 var(--main-blue-light);
+            height: inherit;
 
             &:hover {
                 background-color: var(--main-blue);

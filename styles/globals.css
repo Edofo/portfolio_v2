@@ -76,3 +76,45 @@ button {
   cursor: pointer;
   transition-duration: 0.2s;
 }
+
+.swiper {
+  position: unset !important;
+}
+
+.swiper-container {
+  padding: 75px 0 !important;
+  position: initial !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--main-blue) !important;
+  top: 35% !important;
+  transition-duration: 0.2s;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  color: var(--main-blue-light) !important;
+}
+
+.swiper-button-prev {
+  left: -50px !important;
+}
+
+.swiper-button-next {
+  right: -50px !important;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-button-prev {
+    left: -30px !important;
+  }
+  
+  .swiper-button-next {
+    right: -30px !important;
+  }
+}
