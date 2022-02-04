@@ -16,8 +16,6 @@ const About = () => {
         }, 2000)
     
     }, [])
-
-
    
     const checkImage = () => {
         if(document !== undefined) {
@@ -27,6 +25,10 @@ const About = () => {
                 height: img.height
             })
         }
+    }
+
+    if(imgInfos.width === 0) {
+        checkImage()
     }
 
     const text = {
