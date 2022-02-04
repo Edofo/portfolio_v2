@@ -1,0 +1,61 @@
+.services {
+    .servicesBody {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+
+        max-width: 1420px;
+        margin: 100px auto 200px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 30%;
+            cursor: pointer;
+            padding: 35px 15px;
+            border-radius: 8px;
+            transition-duration: 0.2s;
+            box-shadow: 0 0 2px 0 var(--main-blue-light);
+
+            &:hover {
+                background-color: var(--main-blue);
+
+                i {
+                    border: 2px dashed var(--main-blue-dark);
+                }
+            }
+
+            i {
+                border-radius: 50%;
+                border: 2px dashed var(--main-blue);
+                padding: 20px;
+                font-size: 45px;
+            }
+
+            h3 {
+                font-size: 25px;
+                margin: 15px 0;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .services {
+        .servicesBody {
+            flex-direction: column;
+
+            .card {
+                width: 90%;
+                margin: 15px 0;
+            }
+        }
+    }
+}
