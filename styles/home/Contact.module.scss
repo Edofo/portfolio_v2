@@ -10,11 +10,13 @@
             margin: 0 auto;
 
             input, textarea {
-                background-color: var(--main-blue);
-                border: none;
-                margin: 5px 0;
+                background-color: var(--main-blue-dark);
+                border: 2px solid var(--main-blue);
+                border-radius: 8px;
                 padding: 15px;
                 max-width: 100%;
+                width: 75%;
+                margin: 5px auto;
                 color: var(--main-gray-light);
             }
 
