@@ -55,7 +55,7 @@ const About = () => {
 
 
     return (
-        <div className={styles.about}>
+        <section id="about" className={styles.about}>
             <h2>A PROPOS</h2>
             <div className={styles.aboutBody}>
                 <div className={styles.aboutImage}>
@@ -90,7 +90,7 @@ const About = () => {
                     </div>
                 </div>       
             </div>
-        </div>
+        </section>
     )
 }
 

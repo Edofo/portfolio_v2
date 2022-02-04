@@ -2,7 +2,7 @@ import styles from '../../styles/home/Services.module.scss'
 
 const Services = () => {
     return (
-        <div className={styles.services}>
+        <section id="services" className={styles.services}>
             <h2>SERVICES</h2>
             <div className={styles.servicesBody}>
                 <div className={styles.card}>
@@ -21,7 +21,7 @@ const Services = () => {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
