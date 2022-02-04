@@ -1,22 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import Footer from '../composants/Footer'
+import About from '../composants/home/About'
 import Navbar from '../composants/Navbar'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
+    return (
+        <div>
 
-      <Navbar />
-      
+            <Navbar />
 
-      <main className={styles.main}>
-       
-      </main>
+            <main>
 
-      <Footer />
+                <About />
+        
+            </main>
 
-    </div>
-  )
+            <Footer />
+
+        </div>
+    )
 }

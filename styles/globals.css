@@ -8,13 +8,15 @@ body {
   overflow: hidden;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--main-blue-dark);
 }
 
 :root {
-  --main-blue-dark: #2985c2;
-  --main-blue: #3498db;
-  --main-gray: #dcdde1;
-  --main-light-gray: #f5f6fa;
+  --main-blue-dark: #090A1A;
+  --main-blue: #222752;
+  --main-blue-light: #4a56ad;
+  --main-gray: #b3b3b4;
+  --main-gray-light: #d8d8da;
 }
 
 code {
@@ -32,6 +34,7 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: var(--main-gray);
 }
 
 ::-webkit-scrollbar {
@@ -51,4 +54,25 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--main-blue-dark);
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 75px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: var(--main-gray);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.2s;
 }

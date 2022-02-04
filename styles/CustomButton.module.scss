@@ -1,0 +1,17 @@
+.customBtn {
+    border: 2px solid var(--main-blue);
+    color: var(--main-gray-light);
+    padding: 15px 25px;
+}
+
+.customBtnBlack {
+    background-color:  transparent;
+
+    &:hover {
+        background-color: var(--main-blue-light);
+    }
+
+    &:active {
+        background-color: var(--main-blue);
+    }
+}
