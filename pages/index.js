@@ -1,5 +1,6 @@
 import Footer from '../composants/Footer'
 import About from '../composants/home/About'
+import Contact from '../composants/home/Contact'
 import Feedback from '../composants/home/Feedback'
 import Services from '../composants/home/Services'
 import Navbar from '../composants/Navbar'
@@ -18,6 +19,8 @@ export default function Home() {
                 <Services />
 
                 <Feedback />
+
+                <Contact />
         
             </main>
 
