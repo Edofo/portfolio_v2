@@ -29,11 +29,6 @@ const About = () => {
         }
     }
 
-    
-    if(imgInfos.width === '' || imgInfos.width <= 0) {
-        checkImage()
-    }
-
     const text = {
         bio: 'Proin lacus justo, dapibus sit amet bibendum ut, mollis imperdiet est. Praesent iaculis urna diam. Aenean hendrerit erat id bibendum luctus. Nullam id enim interdum, maximus orci eu, mollis risus. Pellentesque id eros a erat finibus fermentum. Donec in efficitur purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis leo sapien. Vestibulum augue libero, imperdiet in accumsan eu, hendrerit eu lectus.',
         formation: 'LOL',
