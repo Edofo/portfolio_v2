@@ -17,6 +17,10 @@ const About = () => {
     
     }, [])
 
+    if(imgInfos.width === '' || imgInfos.width <= 0) {
+        checkImage()
+    }
+
    
     const checkImage = () => {
         const img = document.querySelector('#img-about')   
