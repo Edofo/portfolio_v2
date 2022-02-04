@@ -14,6 +14,8 @@ const About = () => {
         window.addEventListener('resize', () => {
             checkImage()
         }, 2000)
+
+        setTimeout(() => checkImage(), 2000)
     
     }, [])
    
@@ -25,10 +27,6 @@ const About = () => {
                 height: img.height
             })
         }
-    }
-
-    if(imgInfos.width === 0) {
-        checkImage()
     }
 
     const text = {
