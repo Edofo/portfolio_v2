@@ -15,7 +15,7 @@ const About = () => {
             checkImage()
         }, 2000)
 
-        setTimeout(() => checkImage(), 2000)
+        setTimeout(() => checkImage(), 400)
     
     }, [])
    
