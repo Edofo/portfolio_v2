@@ -4,6 +4,7 @@ import Contact from '../composants/home/Contact'
 import Feedback from '../composants/home/Feedback'
 import Services from '../composants/home/Services'
 import Navbar from '../composants/Navbar'
+import Particle from '../composants/Particle'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
             <Navbar />
 
             <main>
+
+                <Particle />
 
                 <About />
 
