@@ -49,9 +49,9 @@ const Skill = () => {
                 </div>
                 <div>
                     {
-                        listSkillState.map((x) => {
+                        listSkillState.map((x, i) => {
                             return (
-                                <div>
+                                <div key={i}>
                                     <h3>{x.title}</h3>
                                     <hr />
                                     <div>
