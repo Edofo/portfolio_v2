@@ -49,4 +49,95 @@
             }
         }
     }
+
+    .burger, .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .header {
+        padding: 15px 5%;
+
+        ul li a {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        ul {
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 0;
+            height: 100vh;
+            width: 70vw;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            background-color: var(--main-blue);
+            transition-duration: 0.2s;
+            z-index: 3;
+
+            li {
+                a {
+                    margin: 5px 0;
+                }
+            }
+        }
+
+        .menuActive {
+            transform: translateX(0);
+        }
+
+        button {
+            display: none;
+        }
+
+        .sidebar {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            transition-duration: 0.3s;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translateX(100%);
+        }
+
+        .sidebarActive {
+            transform: translateX(0);
+        }
+
+        .burger {
+            display: block;
+            z-index: 4;
+
+            div {
+                background-color: whitesmoke;
+                height: 3px;
+                width: 25px;
+                border-radius: 5px;
+                margin: 5px 0;
+                transition-duration: 0.2s;
+            }
+        }
+
+        .burgerActive {
+            .top {
+                transform: translateY(4px) rotate(45deg);
+            }
+            .middle {
+                display: none;
+            }
+            .bottom {
+                transform: translateY(-4px) rotate(-45deg);
+            }
+        }
+    }
 }
