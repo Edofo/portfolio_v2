@@ -7,11 +7,14 @@ const Navbar = () => {
 
     const [active, setActive] = useState('home')
 
+    const [activeBurger, setActiveBurger] = useState(false)
+
     useEffect(() => {
         checkSection()
 
         window.addEventListener('scroll', () => {
             checkSection()
+            setActiveBurger(false)
         }, false)
     }, [])
 
@@ -41,15 +44,22 @@ const Navbar = () => {
     return (
         <header className={styles.header}>
             <p>Nolan - L.</p>
-            <ul>
+            <ul className={activeBurger === true ? styles.menuActive : ''}>
                 <li className={active === 'home' ? styles.active : ''}><Link href="#home">Home</Link></li>
                 <li className={active === 'about' ? styles.active : ''}><Link  href="#about">A propos</Link></li>
                 <li className={active === 'services' ? styles.active : ''}><Link href="#services">Services</Link></li>
+                <li className={active === 'skill' ? styles.active : ''}><Link href="#skill">Skill</Link></li>
                 <li className={active === 'portfolio' ? styles.active : ''} ><Link href="#portfolio">Portfolio</Link></li>
                 <li className={active === 'feedback' ? styles.active : ''}><Link href="#feedback">Feedback</Link></li>
                 <li className={active === 'contact' ? styles.active : ''}><Link href="#contact">Contact</Link></li>
             </ul>
             <CustomButton text="Me contacter" style="black"/>
+            <div className={`${activeBurger === true ? styles.sidebarActive : ''} ${styles.sidebar}`}/>
+            <div onClick={() => setActiveBurger(!activeBurger)} className={`${activeBurger === true ? styles.burgerActive : ''} ${styles.burger}`}>
+                <div className={styles.top}/>
+                <div className={styles.middle}/>
+                <div className={styles.bottom}/>
+            </div>
         </header>
     )
 }

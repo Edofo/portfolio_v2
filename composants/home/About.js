@@ -67,8 +67,8 @@ const About = () => {
                 <div className={styles.aboutContainer}>
                     <div className={styles.aboutCat}>
                         <button onClick={() => setSelectInfos('bio')} className={selectInfos === 'bio' ? styles.active : ''}>Bio</button>
-                        <button onClick={() => setSelectInfos('formation')} className={selectInfos === 'formation' ? styles.active : 'formation'}>Formation</button>
-                        <button onClick={() => setSelectInfos('experience')} className={selectInfos === 'experience' ? styles.active : 'experience'}>Experiences</button>
+                        <button onClick={() => setSelectInfos('formation')} className={selectInfos === 'formation' ? styles.active : ''}>Formation</button>
+                        <button onClick={() => setSelectInfos('experience')} className={selectInfos === 'experience' ? styles.active : ''}>Experiences</button>
                     </div>
                     <p id="text-about" className={styles.aboutText}>
                         {textInfos}
