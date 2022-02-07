@@ -3,6 +3,26 @@
         max-width: 1420px;
         margin: 100px auto 200px;
 
+        .portfolioGrid {
+            display: grid; 
+            grid-template-columns: 30% 30% 30%; 
+            grid-template-rows: 1fr 1fr 1fr; 
+            gap: 10px 10px; 
+            grid-template-areas: 
+                "IMG-2 IMG-3 IMG-4"
+                "IMG-5 IMG-1 IMG-1"
+                "IMG-6 IMG-1 IMG-1"; 
 
+            .image1 { grid-area: IMG-1; }
+            .image2 { grid-area: IMG-2; }
+            .image3 { grid-area: IMG-3; }
+            .image4 { grid-area: IMG-4; }
+            .image5 { grid-area: IMG-5; }
+            .image6 { grid-area: IMG-6; }
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }

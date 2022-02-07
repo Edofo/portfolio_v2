@@ -13,6 +13,10 @@ const Skill = () => {
                 title: 'NextJS',
                 number: '8'
             },
+            {
+                title: 'Laravel',
+                number: '6'
+            },
         ],
         languages: [
             {
@@ -47,11 +51,11 @@ const Skill = () => {
                     <button onClick={() => setSelectInfos('framework')} className={selectInfos === 'framework' ? styles.active : ''}>Framework</button>
                     <button onClick={() => setSelectInfos('languages')} className={selectInfos === 'languages' ? styles.active : ''}>Languages</button>
                 </div>
-                <div>
+                <div className={styles.list}>
                     {
                         listSkillState.map((x, i) => {
                             return (
-                                <div key={i}>
+                                <div className={styles.oneSkill} key={i}>
                                     <h3>{x.title}</h3>
                                     <hr />
                                     <div>

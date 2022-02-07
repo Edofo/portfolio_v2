@@ -3,6 +3,41 @@
         max-width: 1420px;
         margin: 100px auto 200px;
 
+        button {
+            padding: 5px 15px;
+            margin: 0 10px 0 0;
+            background-color: transparent;
+            color: var(--main-gray-light);
 
+            &:hover {
+                background-color: var(--main-blue-light);
+            }
+
+            &:active {
+                background-color: var(--main-blue);
+            }
+        }
+
+        button.active {
+            background-color: var(--main-blue);
+            color: var(--main-blue-light);
+        }
+
+        .list {
+            .oneSkill {
+                display: flex;
+
+                h3 {
+                    margin-right: 5px;
+                }
+
+                hr {
+                    border: none;
+                    width: 3px;
+                    background-color: var(--main-blue-light);
+                    border-radius: 15px;
+                }
+            }
+        }
     }
 }
