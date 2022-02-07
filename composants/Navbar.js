@@ -28,7 +28,7 @@ const Navbar = () => {
         sections.forEach((x) => {
             const top = x.offsetTop - 200 - navHeight
             const bottom = x.offsetTop + x.offsetHeight
-            console.log(curPos, top, bottom)
+            // console.log(curPos, top, bottom)
 
             if(curPos >= top && curPos <= bottom) {
                 // console.log(x.id)
