@@ -57,8 +57,8 @@ const Skill = () => {
                             return (
                                 <div className={styles.oneSkill} key={i}>
                                     <h3>{x.title}</h3>
-                                    <hr />
                                     <div>
+                                        <hr />
 
                                     </div>
                                 </div>
