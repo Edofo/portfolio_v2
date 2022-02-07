@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 10%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgba(22, 22, 22, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    box-shadow: 0 0 9px 0 black;
+
+    p {
+        color: var(--main-blue-light);
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            a {
+                padding: 5px 15px;
+                margin: 0 5px;
+                background-color: transparent;
+                color: var(--main-gray-light);
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: var(--main-blue-light);
+                }
+
+                &:active {
+                    background-color: var(--main-blue);
+                }
+            }
+
+            
+        }
+
+        li.active {
+            a {
+                background-color: var(--main-blue);
+                color: var(--main-blue-light2);
+            }
+        }
+    }
+}
