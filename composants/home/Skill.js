@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from '../../styles/home/Skill.module.scss'
 
 const Skill = () => {
@@ -7,29 +7,29 @@ const Skill = () => {
         framework: [
             {
                 title: 'ReactJS',
-                number: '9'
+                number: '92'
             },
             {
                 title: 'NextJS',
-                number: '8'
+                number: '86'
             },
             {
                 title: 'Laravel',
-                number: '6'
+                number: '67'
             },
         ],
         languages: [
             {
                 title: 'HTML',
-                number: '10'
+                number: '100'
             },
             {
                 title: 'CSS/SCSS',
-                number: '10'
+                number: '99'
             },
             {
                 title: 'JS',
-                number: '9'
+                number: '95'
             },
         ],
     }
@@ -47,19 +47,19 @@ const Skill = () => {
         <section id="skill" className={styles.skill}>
             <h2>SKILL</h2>
             <div className={styles.skillBody}>
-                <div>
+                <div className={styles.skillBtn}>
                     <button onClick={() => setSelectInfos('framework')} className={selectInfos === 'framework' ? styles.active : ''}>Framework</button>
                     <button onClick={() => setSelectInfos('languages')} className={selectInfos === 'languages' ? styles.active : ''}>Languages</button>
                 </div>
                 <div className={styles.list}>
                     {
                         listSkillState.map((x, i) => {
+
                             return (
                                 <div className={styles.oneSkill} key={i}>
                                     <h3>{x.title}</h3>
-                                    <div>
-                                        <hr />
-
+                                    <div className={styles.barline}>
+                                        <div style={{width: `${x.number}%`}} className={`${styles.countbar} countbarCheck`} data-percentnumber={`${x.number}`}><h4>{x.number}%</h4></div>
                                     </div>
                                 </div>
                             )

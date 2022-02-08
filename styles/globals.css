@@ -58,6 +58,10 @@ a {
   background: var(--main-blue-dark);
 }
 
+section {
+  padding-top: 150px
+}
+
 h1 {
   font-size: 100px;
 }

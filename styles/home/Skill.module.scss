@@ -1,42 +1,90 @@
 .skill {
     .skillBody {
         max-width: 1420px;
-        margin: 100px auto 200px;
+        margin: 100px auto;
 
-        button {
-            padding: 5px 15px;
-            margin: 0 10px 0 0;
-            background-color: transparent;
-            color: var(--main-gray-light);
+        .skillBtn {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 50px 0;
 
-            &:hover {
-                background-color: var(--main-blue-light);
+            button {
+                padding: 5px 15px;
+                margin: 0 10px 0 0;
+                background-color: transparent;
+                color: var(--main-gray-light);
+
+                &:hover {
+                    background-color: var(--main-blue-light);
+                }
+
+                &:active {
+                    background-color: var(--main-blue);
+                }
             }
 
-            &:active {
+            button.active {
                 background-color: var(--main-blue);
+                color: var(--main-blue-light);
             }
-        }
-
-        button.active {
-            background-color: var(--main-blue);
-            color: var(--main-blue-light);
         }
 
         .list {
+            width: 75%;
+            margin: 0 auto;
             .oneSkill {
                 display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin: 15px 0;
 
                 h3 {
                     margin-right: 5px;
+                    width: 20%;
                 }
 
-                hr {
-                    border: none;
-                    width: 3px;
-                    background-color: var(--main-blue-light);
-                    border-radius: 15px;
+                
+                .barline {
+                    width: 80%;
+                    height: 12px;
+                    background: var(--main-gray-light);
+                    border-radius: 20px;
+                
+                    .countbar {
+                        height: 12px;
+                        background-color: var(--main-blue-light);
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        position: relative;
+                        width: 0;
+                        transition-duration: 0.2s;
+
+                        h4 {
+                            position: absolute;
+                            right: -19px;
+                            top: -35px;
+                            background-color: var(--main-blue);
+                            color: var(--main-blue-light);
+                            padding: 4px 6px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            border-radius: 5px;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                bottom: -10px;
+                                left: 50%;
+                                width: 11px;
+                                height: 11px;
+                                background-color: var(--main-blue);
+                                transform: rotate(45deg) translateX(-60%);
+                            }
+                        }
+                    }
                 }
+
             }
         }
     }
