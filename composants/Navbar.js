@@ -36,6 +36,7 @@ const Navbar = () => {
             if(curPos >= top && curPos <= bottom) {
                 // console.log(x.id)
                 setActive(x.id)
+                // window.history.pushState({}, "", `#${x.id}`)
             }
         })
        

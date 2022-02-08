@@ -67,10 +67,6 @@ section {
   max-width: 1420px;
 }
 
-h1 {
-  font-size: 100px;
-}
-
 h2 {
   font-size: 75px;
   text-align: center;
@@ -138,10 +134,6 @@ button {
 }
 
 @media screen and (max-width: 500px) {
-  h1 {
-    font-size: 75px;
-  }
-  
   h2 {
     font-size: 50px;
     text-align: center;
