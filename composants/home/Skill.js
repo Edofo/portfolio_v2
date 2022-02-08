@@ -46,7 +46,7 @@ const Skill = () => {
     return (
         <section id="skill" className={styles.skill}>
             <h2>SKILL</h2>
-            <div className={styles.skillBody}>
+            <div className={`${styles.skillBody} subsection`}>
                 <div className={styles.skillBtn}>
                     <button onClick={() => setSelectInfos('framework')} className={selectInfos === 'framework' ? styles.active : ''}>Framework</button>
                     <button onClick={() => setSelectInfos('languages')} className={selectInfos === 'languages' ? styles.active : ''}>Languages</button>

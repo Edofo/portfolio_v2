@@ -1,7 +1,5 @@
 .skill {
     .skillBody {
-        max-width: 1420px;
-        margin: 100px auto;
 
         .skillBtn {
             display: flex;
@@ -85,6 +83,24 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill .skillBody .list {
+        .oneSkill {
+            flex-direction: column;
+            margin: 25px 0;
+
+            h3 {
+                align-self: flex-start;
+                width: 100%;
+            }
+
+            .barline {
+                width: 100%;
             }
         }
     }

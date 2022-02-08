@@ -1,12 +1,12 @@
 .portfolio {
     .portfolioBody {
-        max-width: 1420px;
-        margin: 75px auto;
 
         .portfolioBtn {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin: 0 0 50px 0;
+
             button {
                 padding: 5px 15px;
                 margin: 0 10px 0 0;
@@ -78,5 +78,17 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio .portfolioBody .portfolioGrid {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio .portfolioBody .portfolioGrid {
+        width: 90%;
     }
 }

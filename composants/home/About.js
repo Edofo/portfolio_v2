@@ -57,7 +57,7 @@ const About = () => {
     return (
         <section id="about" className={styles.about}>
             <h2>A PROPOS</h2>
-            <div className={styles.aboutBody}>
+            <div className={`${styles.aboutBody} subsection`}>
                 <div className={styles.aboutImage}>
                     <img id='img-about' alt='photo' src='/images/phoyo.jpg' />
                     {

@@ -109,7 +109,7 @@ const Portfolio = () => {
     return (
         <section id="portfolio" className={styles.portfolio}>
             <h2>PORTFOLIO</h2>
-            <div className={styles.portfolioBody}>
+            <div className={`${styles.portfolioBody} subsection`}>
                 <div className={styles.portfolioBtn}>
                     <button onClick={() => setSelectInfos('all')} className={selectInfos === 'all' ? styles.active : ''}>All</button>
                     <button onClick={() => setSelectInfos('color')} className={selectInfos === 'color' ? styles.active : ''}>Color Telecom</button>

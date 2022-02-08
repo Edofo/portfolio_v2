@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section id="contact" className={styles.contact}>
             <h2>CONTACT</h2>
-            <div className={styles.contactBody}>
+            <div className={`${styles.contactBody} subsection`}>
                 <form>
                     <input placeholder='Nom prénom'/>
                     <input placeholder='Email'/>

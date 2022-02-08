@@ -62,6 +62,11 @@ section {
   padding-top: 150px
 }
 
+.subsection {
+  margin: 100px auto;
+  max-width: 1420px;
+}
+
 h1 {
   font-size: 100px;
 }
@@ -73,6 +78,7 @@ h2 {
 
 h1, h2 {
   color: var(--main-gray);
+  line-break: anywhere;
 }
 
 button {
@@ -115,6 +121,12 @@ button {
   justify-content: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .subsection {
+    margin: 50px auto;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .swiper-button-prev {
     left: -30px !important;
@@ -122,5 +134,16 @@ button {
   
   .swiper-button-next {
     right: -30px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 75px;
+  }
+  
+  h2 {
+    font-size: 50px;
+    text-align: center;
   }
 }

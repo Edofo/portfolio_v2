@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <section id="services" className={styles.services}>
             <h2>SERVICES</h2>
-            <div className={styles.servicesBody}>
+            <div className={`${styles.servicesBody} subsection`}>
                 <div className={styles.card}>
                     <i className="fad fa-alarm-clock"></i>
                     <h3>Planning</h3>

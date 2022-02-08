@@ -33,7 +33,7 @@ const Feedback = () => {
     return (
         <section id="feedback" className={styles.feedback}>
             <h2>FEEDBACK</h2>
-            <div className={styles.feedbackBody}>
+            <div className={`${styles.feedbackBody} subsection`}>
                 <i className="fad fa-quote-right"></i>
                 <div className={styles.feedbackContainer}>
                     <Swiper
