@@ -9,6 +9,9 @@ const Navbar = () => {
 
     const [activeBurger, setActiveBurger] = useState(false)
 
+    const [activeTheme, setActiveTheme] = useState("dark");
+    const inactiveTheme = activeTheme === "dark" ? "light" : "dark";
+
     useEffect(() => {
         checkSection()
 
@@ -42,9 +45,16 @@ const Navbar = () => {
        
     }
 
+    useEffect(() => {
+        document.body.dataset.theme = activeTheme;
+    }, [activeTheme]);    
+
     return (
         <header className={styles.header}>
-            <p>Nolan - L.</p>
+            <div style={{display: 'flex'}}>
+                <button className={styles.switch} onClick={() => setActiveTheme(inactiveTheme)}>{activeTheme === 'dark' ? '🌙' : '☀️'}</button>
+                <p>Nolan - L.</p>
+            </div>
             <ul className={activeBurger === true ? styles.menuActive : ''}>
                 <li className={active === 'home' ? styles.active : ''}><Link href="#home">Home</Link></li>
                 <li className={active === 'about' ? styles.active : ''}><Link  href="#about">A propos</Link></li>

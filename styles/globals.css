@@ -12,7 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 
-:root {
+body, body[data-theme="dark"] {
   --main-blue-dark: #090A1A;
   --main-blue: #222752;
   --main-blue-light: #4a56ad;
@@ -20,6 +20,19 @@ body {
   --main-gray: #b3b3b4;
   --main-gray-light: #d8d8da;
 }
+
+
+body[data-theme="light"] {
+  --main-blue-dark: #f6f5e5;
+  --main-blue: #ddd8ad;
+  --main-blue-light: #b5a952;
+  --main-blue-light2: #786e1b;
+  --main-gray: #4c4c4b;
+  --main-gray-light: #272725;
+}
+
+
+
 
 code {
   

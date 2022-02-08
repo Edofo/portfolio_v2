@@ -12,6 +12,10 @@
     z-index: 1000;
     box-shadow: 0 0 9px 0 black;
 
+    .switch {
+        background-color: transparent;
+    }
+
     p {
         color: var(--main-blue-light);
         font-size: 25px;
@@ -68,6 +72,10 @@
 
 @media screen and (max-width: 1000px) {
     .header {
+
+        .switch {
+            display: block !important;
+        }
         ul {
             position: absolute;
             flex-direction: column;
