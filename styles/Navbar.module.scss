@@ -54,19 +54,25 @@
             }
         }
     }
-
+    
     .buttonContact {
-        border: 2px solid var(--main-blue);
-        color: var(--main-gray-light);
-        padding: 15px 25px;
-        background-color:  transparent;
+        background-color: transparent;
 
-        &:hover {
-            background-color: var(--main-blue-light);
-        }
+        a {
+            border: 2px solid var(--main-blue);
+            color: var(--main-gray-light);
+            padding: 15px 25px;
+            background-color:  transparent;
+            border-radius: 5px;
+            transition-duration: 0.2s;
 
-        &:active {
-            background-color: var(--main-blue);
+            &:hover {
+                background-color: var(--main-blue-light);
+            }
+
+            &:active {
+                background-color: var(--main-blue);
+            }
         }
     }
 
@@ -88,9 +94,14 @@
 @media screen and (max-width: 1000px) {
     .header {
 
-        .switch {
+        .switch, .buttonContact {
             display: block !important;
         }
+
+        .buttonContact2 {
+            display: none !important;
+        }
+
         ul {
             position: absolute;
             flex-direction: column;
