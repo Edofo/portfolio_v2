@@ -11,21 +11,21 @@ const Feedback = () => {
 
     const feedBack = [
         {
-            text: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-            user: 'Ponch',
-            rank: 'Developpeur Front',
+            text: "Première collaboration avec Edofo et vraiment très surpris du résultat. A su mettre en œuvre correctement nos attentes. Toujours à l’écoutes, disponible et à proposer ces idées quand il le faut. Pour une première collaboration je suis plus que satisfait du travail mené. Nous tâcherons de réitérer nos commandes envers lui et nous vous invitons fortement à faire de même si vous hésitez encore à passer par ses services !",
+            user: 'Louis',
+            rank: 'Fondateur - La Taverne Du Design',
             photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
         },
         {
-            text: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-            user: 'Souf',
-            rank: 'Developpeur du Dark',
+            text: "Je suis agréablement surpris de la qualité des services que Nolan fournis. Je lui mets la note de 5 étoiles, il traite la demande rapidement et d'une très bonne qualité ! Je recommande ses services !",
+            user: 'Bertrand',
+            rank: 'Fondateur - StandardEnLigne',
             photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
         },
         {
-            text: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-            user: 'Romain',
-            rank: 'Developpeur Junior',
+            text: "Nolan est un élève en développement fullstack très impliqué, qui à le sens du détail et qui apprend très vite, son site à été parfaitement réaliser. Bravo à toi !",
+            user: 'Rooksar',
+            rank: 'Amis - Élève',
             photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
         },
     ]

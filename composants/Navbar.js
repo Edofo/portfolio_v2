@@ -62,9 +62,8 @@ const Navbar = () => {
                 <li className={active === 'skill' ? styles.active : ''}><Link href="#skill">Skill</Link></li>
                 <li className={active === 'portfolio' ? styles.active : ''} ><Link href="#portfolio">Portfolio</Link></li>
                 <li className={active === 'feedback' ? styles.active : ''}><Link href="#feedback">Feedback</Link></li>
-                <li className={active === 'contact' ? styles.active : ''}><Link href="#contact">Contact</Link></li>
             </ul>
-            <CustomButton text="Me contacter" style="black"/>
+            <Link className={styles.buttonContact} href="#contact">Me contacter</Link>
             <div className={`${activeBurger === true ? styles.sidebarActive : ''} ${styles.sidebar}`}/>
             <div onClick={() => setActiveBurger(!activeBurger)} className={`${activeBurger === true ? styles.burgerActive : ''} ${styles.burger}`}>
                 <div className={styles.top}/>
