@@ -24,8 +24,13 @@ const Feedback = () => {
         },
         {
             text: "Nolan est un élève en développement fullstack très impliqué, qui à le sens du détail et qui apprend très vite, son site à été parfaitement réaliser. Bravo à toi !",
-            user: 'Rooksar',
+            user: 'Rooksaar',
             rank: 'Amis - Élève',
+            photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
+        },{
+            text: "Nolan est un très bon développeur, il est passioné et cela se retrouve dans ses projets. Il a accumulé une bonne experience au cours des dernières années, il a aussi un bon sens du travail en équipe. Je vous le recommande en tant que développeur freelance 😁 !",
+            user: 'Rooksar',
+            rank: 'Développeur',
             photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
         },
     ]
