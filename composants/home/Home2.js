@@ -1,6 +1,8 @@
 import styles from '../../styles/home/Home.module.scss'
 
 const Home2 = () => {
+
+
     return (
         <section id="home" className={styles.home}>
             <div className={styles.bg}></div>
@@ -15,7 +17,8 @@ const Home2 = () => {
                     <div className={styles.social}>
                         <p>SOCIAL</p>
                         <hr />
-                        <i className="fab fa-discord"></i>
+                        <a href="https://discord.com/users/331709677672988672" target="_blank"><i className="fab fa-discord"></i></a>
+                        <a href="https://www.twitch.tv/Edofo" target="_blank"><i className="fab fa-twitch"></i></a>
                     </div>
                 </div>
             </div>

@@ -63,12 +63,12 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--main-blue);
+  background: var(--main-blue-light);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--main-blue-dark);
+  background: var(--main-blue);
 }
 
 section {

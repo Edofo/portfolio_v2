@@ -22,6 +22,7 @@
         justify-content: space-between;
         max-width: 1420px;
         margin: 0 auto;
+        width: 90%;
 
         .head {
             padding-left: 15px;
@@ -66,7 +67,7 @@
                 height: fit-content;
                 align-items: center;
                 transform: rotate(90deg);
-                margin-top: 25vh;
+                height: auto;
 
                 hr {
                     height: 3px;
@@ -79,7 +80,9 @@
 
                 i {
                     cursor: pointer;
+                    font-size: 25px;
                     transition-duration: 0.2s;
+                    margin: 0 5px;
 
                     &:hover {
                         color: var(--main-blue-light);
@@ -90,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .home .container{
         flex-direction: column;
         width: 90vw
@@ -101,6 +104,8 @@
         }
 
         .homeBody {
+            flex-direction: column-reverse;
+            width: 100%;
             img {
                 display: none;
             }
@@ -110,7 +115,7 @@
                 margin-top: 0;
 
                 hr {
-                    width: 20vw;
+                    width: 20px;
                     height: 3px;
                 }
             }
