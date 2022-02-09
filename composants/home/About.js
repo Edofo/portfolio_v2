@@ -31,11 +31,11 @@ const About = () => {
     }
 
     const text = {
-        bio: "Je me présente, je me nomme Nolan LEBOUCHER, alias Edofo. Je suis née le 18 décembre 2002, je possède donc 19 ans. Très bonne maîtrise de la langue Anglaise et possédant nombreuses qualités.",
+        bio: "Je me présente, je me nomme Nolan LEBOUCHER, alias Edofo. Je suis née le 18 décembre 2002, je possède donc 19 ans. En ce moment même, je réside en France dans la ville nommée Villejuif (94800). Très bonne maîtrise de la langue Anglaise et possédant nombreuses qualités.",
         formation: "Actuellement en Bachelor Concepteur Développeur / Global Programming au sein de l'école d'ingénieurs Efrei Paris situé à Villejuif. Je possède plusieurs qui sont éloignés de la tech. Le diplôme : Bac Pro Métiers de la Sécurité, Le diplôme PSE1 - PSE2 (Premier Secours en Equipe).",
         experience: "Je développe des sites web depuis 2017, je possède donc une très bonne maitrise dans le HTML / CSS. Ensuite peu après j'ai commencé à apprendre le PHP grâce à la réalisation d'un système de news/catalogue. Peu après je me suis amusé à dev des bots discord en NodeJS. Pour les Framework, j'ai commencé à développer sur ReactJS ainsi que Laravel. Peu de temps après, je me suis lancé sur NextJS. Maintenant je peu dire que je maîtrise totalement le HTML/SASS/PHP/NodeJS. "
     }
-    // A l'heure actuelle, je possède un Bac pro métiers de la sécurite avec le diplome PSE1 et PSE2 (Premier Secours en Equipe) 
+
     const [selectInfos, setSelectInfos] = useState('bio')
     const [textInfos, setTextInfos] = useState(text['bio'])
 
