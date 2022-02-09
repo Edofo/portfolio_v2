@@ -74,7 +74,7 @@
                     opacity: 0;
                     height: 100%;
                     width: 100%;
-                    background: linear-gradient(rgba(224, 224, 224, 0.055), rgb(0, 0, 0));
+                    background: linear-gradient(rgba(224, 224, 224, 0.05), var(--main-blue));
                     transition-duration: 0.2s;
                 }
             }
