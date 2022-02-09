@@ -7,7 +7,7 @@ const Home2 = () => {
             <div className={styles.container}> 
                 <div className={styles.head}>
                     <h1>HI !</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+                    <p>Je suis <strong>Nolan</strong>, développeur Fullstack. <br />Découvrez rapidement mes valeurs et mes activités grâce au bouton !</p>
                     <a href="Nolan_LEBOUCHER.pdf" download>Télécharger mon CV</a>
                 </div>
                 <div className={`${styles.homeBody}`}>
