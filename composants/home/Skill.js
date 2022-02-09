@@ -24,7 +24,7 @@ const Skill = () => {
                 number: '100'
             },
             {
-                title: 'CSS/SCSS',
+                title: 'CSS/SASS',
                 number: '99'
             },
             {
