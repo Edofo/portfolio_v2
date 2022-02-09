@@ -3,8 +3,8 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
   <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
-  <a href="https://twitter.com/Edof0" target="_blank">
-    <img alt="Twitter: Edof0" src="https://img.shields.io/twitter/follow/Edof0.svg?style=social" />
+  <a href="https://twitter.com/Ed0fo" target="_blank">
+    <img alt="Twitter: Ed0fo" src="https://img.shields.io/twitter/follow/Edof0.svg?style=social" />
   </a>
 </p>
 
