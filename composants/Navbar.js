@@ -62,7 +62,7 @@ const Navbar = () => {
                 <li className={active === 'skill' ? styles.active : ''}><Link href="#skill">Skill</Link></li>
                 <li className={active === 'portfolio' ? styles.active : ''} ><Link href="#portfolio">Portfolio</Link></li>
                 <li className={active === 'feedback' ? styles.active : ''}><Link href="#feedback">Feedback</Link></li>
-                <button className={styles.buttonContact}>
+                <button className={`${styles.buttonContact} ${styles.buttonContact3}`}>
                     <Link  href="#contact">Me contacter</Link>
                 </button>
             </ul>

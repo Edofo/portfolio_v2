@@ -8,7 +8,7 @@ const Home2 = () => {
                 <div className={styles.head}>
                     <h1>HI !</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-                    <a>Télécharger mon CV</a>
+                    <a href="Nolan_LEBOUCHER.pdf" download>Télécharger mon CV</a>
                 </div>
                 <div className={`${styles.homeBody}`}>
                     <img src='./images/caracter_naruto.png' alt='photo' />

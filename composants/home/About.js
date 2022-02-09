@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 import styles from '../../styles/home/About.module.scss'
@@ -85,8 +86,8 @@ const About = () => {
                             {/* <p><strong>Téléphone:...</strong>+33 6 24 22 03 34</p> */}
                         </div>
                     </div>
-                    <div>
-                        <CustomButton text='Me contacter' style='black'/>
+                    <div className={styles.aboutBtn}>
+                        <Link href="#contact">Me contacter</Link>
                     </div>
                 </div>       
             </div>

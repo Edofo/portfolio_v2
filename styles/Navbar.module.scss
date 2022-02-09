@@ -76,6 +76,10 @@
         }
     }
 
+    .buttonContact3 {
+        display: none;
+    }
+
     .burger, .sidebar {
         display: none;
     }
@@ -94,7 +98,7 @@
 @media screen and (max-width: 1000px) {
     .header {
 
-        .switch, .buttonContact {
+        .switch, .buttonContact, .buttonContact3 {
             display: block !important;
         }
 
