@@ -39,9 +39,9 @@ const Contact = () => {
             <h2>CONTACT</h2>
             <div className={`${styles.contactBody} subsection`}>
                 <form onSubmit={(e) => sendEmail(e)}>
-                    <input type="text" name="client" placeholder='Nom prénom'/>
-                    <input type="text" name="email" placeholder='Email'/>
-                    <textarea type="text" name="desc" placeholder='Details de votre demande'/>
+                    <input required type="text" name="client" placeholder='Nom prénom'/>
+                    <input required type="email" name="email" placeholder='Email'/>
+                    <textarea required type="text" name="desc" placeholder='Details de votre demande'/>
                     {
                         send ?
                             <button style={{pointerEvents: 'none'}} type="submit">Email envoyé</button>
