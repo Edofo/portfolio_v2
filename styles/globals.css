@@ -110,7 +110,6 @@ button {
 
 .swiper-button-prev, .swiper-button-next {
   color: var(--main-blue) !important;
-  top: 35% !important;
   transition-duration: 0.2s;
 }
 
