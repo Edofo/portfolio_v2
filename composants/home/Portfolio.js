@@ -138,8 +138,10 @@ const Portfolio = () => {
                         <div className={styles.modal}>
                             <div onClick={() => setDisplayModal(false)} className={styles.shadow}></div>
                             <div className={styles.submodal}>
-                                <i onClick={() => setDisplayModal(false)} className="fas fa-times"></i>
-                                <img src={displayModal.img} alt={displayModal.title} />
+                                <div style={{position: 'relative'}}>
+                                    <i onClick={() => setDisplayModal(false)} className="fas fa-times"></i>
+                                    <img src={displayModal.img} alt={displayModal.title} />
+                                </div>
                                 <p>{displayModal.title}</p>
                             </div>
                         </div>

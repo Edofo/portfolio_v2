@@ -100,8 +100,7 @@
                 left: 0;
                 cursor: pointer;
             }
-            
-
+    
             .submodal {
                 position: absolute;
                 top: 50%;
@@ -118,8 +117,8 @@
 
                 i {
                     position: absolute;
-                    top: 15px;
-                    right: 20px;
+                    top: 5px;
+                    right: 10px;
                     color: var(--main-blue);
                     font-size: 30px;
                     cursor: pointer;
@@ -132,7 +131,8 @@
                 }
     
                 img {
-                    width: 100%;
+                    max-height: 70vh;
+                    max-width: 100%;
                     border-radius: 5px;
                 }
     
@@ -144,6 +144,27 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .portfolio .portfolioBody .modal {
+        .submodal {
+            top: 55%;
+
+        }
+    }
+}
+
+
+@media screen and (max-height: 600px) {
+    .portfolio .portfolioBody .modal {
+        .submodal {
+            p  {
+                display: none;
+            }
+        }
+        
     }
 }
 
