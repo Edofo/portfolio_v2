@@ -87,6 +87,8 @@ const Portfolio = () => {
     const [selectInfos, setSelectInfos] = useState('all')
     const [listProject, setListProject] = useState(listImg['all'])
 
+    const [displayModal, setDisplayModal] = useState(false)
+
     useEffect(async() => {
 
         const listPortfolio = document.querySelectorAll('.portfolioUnique')   
@@ -105,6 +107,8 @@ const Portfolio = () => {
         
     }, [selectInfos])
 
+    console.log(displayModal)
+
 
     return (
         <section id="portfolio" className={styles.portfolio}>
@@ -119,7 +123,7 @@ const Portfolio = () => {
                     {
                         listProject.map((x, i) => {
                             return (
-                                <div style={{gridArea: `IMG-${i + 1}`}} className={`portfolioUnique ${styles.onePortfolio}`} key={i}>
+                                <div onClick={() => setDisplayModal(x)} style={{gridArea: `IMG-${i + 1}`}} className={`portfolioUnique ${styles.onePortfolio}`} key={i}>
                                     <img src={x.img} alt={x.title} />
                                     <div className={styles.info}>
                                         <p>{x.title}</p>
@@ -129,6 +133,17 @@ const Portfolio = () => {
                         })
                     }
                 </div>
+                {
+                    displayModal !== false &&
+                        <div className={styles.modal}>
+                            <div onClick={() => setDisplayModal(false)} className={styles.shadow}></div>
+                            <div className={styles.submodal}>
+                                <i onClick={() => setDisplayModal(false)} className="fas fa-times"></i>
+                                <img src={displayModal.img} alt={displayModal.title} />
+                                <p>{displayModal.title}</p>
+                            </div>
+                        </div>
+                }
             </div>
         </section>
     )
