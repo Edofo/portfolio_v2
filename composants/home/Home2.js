@@ -19,6 +19,7 @@ const Home2 = () => {
                         <hr />
                         <a href="https://discord.com/users/331709677672988672" target="_blank"><i className="fab fa-discord"></i></a>
                         <a href="https://www.twitch.tv/Edofo" target="_blank"><i className="fab fa-twitch"></i></a>
+                        <a href="https://www.twitch.tv/Edofo" target="_blank"><i className="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
