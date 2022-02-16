@@ -28,8 +28,8 @@ const Skill = () => {
                 number: '99'
             },
             {
-                title: 'JS',
-                number: '95'
+                title: 'NodeJS',
+                number: '90'
             },
         ],
     }

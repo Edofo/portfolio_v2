@@ -8,12 +8,12 @@ const Services = () => {
                 <div className={styles.card}>
                     <i className="fad fa-alarm-clock"></i>
                     <h3>Planning</h3>
-                    <p>Vous vous demandez surement quelles sont mes horraires ? C'est très simple, étant donné que je suis en cours la journée je peux travailler uniquement le soir et le week-end.</p>
+                    <p>Vous vous demandez surement quels sont mes horaires ? C'est très simple, étant donné que je suis en cours la journée je peux travailler uniquement le soir et le week-end.</p>
                 </div>
                 <div className={styles.card}>
                     <i className="fab fa-react"></i>
                     <h3>Programmation</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Les fameux languages de Programmation ^^. Même si le HTML/SASS est un language de balisage, actuellement je pourrais affirmer que je les maîtrise à 100%. Pour ce qui en est du NodeJS je pourrais dire que je suis dans les 90%.</p>
                 </div>
                 <div className={styles.card}>
                     <i className="fad fa-pencil-ruler"></i>
