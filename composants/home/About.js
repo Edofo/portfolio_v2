@@ -31,9 +31,9 @@ const About = () => {
     }
 
     const text = {
-        bio: "Je me présente, je me nomme Nolan LEBOUCHER, alias Edofo. Je suis née le 18 décembre 2002, je possède donc 19 ans. En ce moment même, je réside en France dans la ville nommée Villejuif (94800). Très bonne maîtrise de la langue Anglaise et possédant nombreuses qualités.",
-        formation: "Actuellement en Bachelor Concepteur Développeur / Global Programming au sein de l'école d'ingénieurs Efrei Paris situé à Villejuif. Je possède plusieurs qui sont éloignés de la tech. Le diplôme : Bac Pro Métiers de la Sécurité, Le diplôme PSE1 - PSE2 (Premier Secours en Equipe).",
-        experience: "Je développe des sites web depuis 2017, je possède donc une très bonne maitrise dans le HTML / CSS. Ensuite peu après j'ai commencé à apprendre le PHP grâce à la réalisation d'un système de news/catalogue. Peu après je me suis amusé à dev des bots discord en NodeJS. Pour les Framework, j'ai commencé à développer sur ReactJS ainsi que Laravel. Peu de temps après, je me suis lancé sur NextJS. Maintenant je peu dire que je maîtrise totalement le HTML/SASS/PHP/NodeJS. "
+        bio: "Hey ! Bonjour à vous, je m'appelle Nolan LEBOUCHER alias Edofo. Full Stack Developer depuis pas mal d'année, je prépare actuellement mon Bachelor en Développement Web et Mobile au sein de Efrei Paris. En parallèle de mes études je réalise plusieurs missions freelance tout en travaillant pour Color Telecom ; l'entreprise pour laquelle j'occupe le rôle de Lead Developer.",
+        formation: "Le Bachelor Développement & Data de Efrei Paris est un diplome préparant le métier de développeur Web ou Mobile. Lors de ces 3 années intenses, j'ai réalisé plusieurs projets afin de valider mes semestres : Application Mobile, site e-commerce, REST API, MERN Stack Website, architecture réseau, DevOps, etc.",
+        experience: "Développant des sites web depuis 2017, je possède une excellente maitrise des techno Front : HTML/CSS, la librairie React ainsi que son framework Next. Mais aussi des techno Back : Node.js, Express, Nest.js, mais aussi PHP puis Laravel. Avoir fait énormément de projets en temps que dev Full Stack m'a donné une expérience concidérable, cette dernière me permet aujourd'hui de pouvoir concevoir des produits de A à Z sans aucuns soucis."
     }
 
     const [selectInfos, setSelectInfos] = useState('bio')
@@ -79,12 +79,10 @@ const About = () => {
                         <div>
                             <p><strong>Age : </strong>19</p>
                             <p><strong>Freelance : </strong>Disponible</p>
-                            {/* <p><strong>Téléphone:...</strong>+33 6 24 22 03 34</p> */}
                         </div>
                         <div>
                             <p><strong>Nationalité : </strong>FR</p>
                             <p><strong>Email : </strong>lnolan.pro@gmail.com</p>
-                            {/* <p><strong>Téléphone:...</strong>+33 6 24 22 03 34</p> */}
                         </div>
                     </div>
                     <div className={styles.aboutBtn}>
