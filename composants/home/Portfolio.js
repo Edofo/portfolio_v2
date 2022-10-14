@@ -125,8 +125,6 @@ const Portfolio = () => {
         
     }, [selectInfos])
 
-    console.log(displayModal)
-
 
     return (
         <section id="portfolio" className={styles.portfolio}>
