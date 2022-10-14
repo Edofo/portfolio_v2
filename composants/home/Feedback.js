@@ -11,27 +11,23 @@ const Feedback = () => {
 
     const feedBack = [
         {
-            text: "Première collaboration avec Edofo et vraiment très surpris du résultat. A su mettre en œuvre correctement nos attentes. Toujours à l’écoutes, disponible et à proposer ces idées quand il le faut. Pour une première collaboration je suis plus que satisfait du travail mené. Nous tâcherons de réitérer nos commandes envers lui et nous vous invitons fortement à faire de même si vous hésitez encore à passer par ses services !",
+            text: "Première collaboration avec Edofo et vraiment très surpris du résultat. A su mettre en œuvre correctement nos attentes. Toujours à l’écoutes, disponible et à proposer ses idées quand il le faut. Pour une première collaboration je suis plus que satisfait du travail mené. Nous tâcherons de réitérer nos commandes envers lui et nous vous invitons fortement à faire de même si vous hésitez encore à passer par ses services !",
             user: 'Louis',
             rank: 'Fondateur - La Taverne Du Design',
-            photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
         },
         {
             text: "Je suis agréablement surpris de la qualité des services que Nolan fournis. Je lui mets la note de 5 étoiles, il traite la demande rapidement et d'une très bonne qualité ! Je recommande ses services !",
             user: 'Bertrand',
             rank: 'Fondateur - StandardEnLigne',
-            photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
         },
         {
-            text: "Nolan est un élève en développement fullstack très impliqué, qui à le sens du détail et qui apprend très vite, son site à été parfaitement réaliser. Bravo à toi !",
-            user: 'Rooksaar',
+            text: "Nolan est un développeur fullstack très impliqué, qui à le sens du détail. Grâce à lui j'ai appris pas mal de choses, son site à été parfaitement réaliser. Bravo à toi !",
+            user: 'Bibi',
             rank: 'Amis',
-            photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
         },{
             text: "Nolan est un très bon développeur, il est passioné et cela se retrouve dans ses projets. Il a accumulé une bonne experience au cours des dernières années, il a aussi un bon sens du travail en équipe. Je vous le recommande en tant que développeur freelance 😁 !",
             user: 'Romain',
-            rank: 'Développeur junior',
-            photo: 'https://avatars.githubusercontent.com/u/70896657?v=4'
+            rank: 'Amis',
         },
     ]
 
