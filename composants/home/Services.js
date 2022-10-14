@@ -8,17 +8,17 @@ const Services = () => {
                 <div className={styles.card}>
                     <i className="fad fa-alarm-clock"></i>
                     <h3>Planning</h3>
-                    <p>Vous vous demandez surement quels sont mes horaires ? C'est très simple, étant donné que je suis en cours la journée je peux travailler uniquement le soir et le week-end.</p>
+                    <p>Mes horaires sont assez flexibles et facilement adaptables : qu’il s’agisse d’une matinée, d’une après-midi ou même d’une soirée ; je suis disponible à n’importe quel moment pour discuter de l’avancement du produit ou pour répondre à toutes vos demandes.</p>
                 </div>
                 <div className={styles.card}>
                     <i className="fab fa-react"></i>
                     <h3>Programmation</h3>
-                    <p>Les fameux languages de Programmation ^^. Même si le HTML/SASS est un language de balisage, actuellement je pourrais affirmer que je les maîtrise à 100%. Pour ce qui en est du NodeJS je pourrais dire que je suis dans les 90%.</p>
+                    <p>Etant un Développeur Full Stack, je travaille sur la partie Front et Back. Je maitrise le HTML/CSS, React et Next, ainsi que Node puis Nest.js. Comme vous avez pu le constater, J’aime travailler avec des techno modernes néanmoins je vous informe que je dev aussi en PHP / Laravel.</p>
                 </div>
                 <div className={styles.card}>
                     <i className="fad fa-pencil-ruler"></i>
                     <h3>UI/UX Design</h3>
-                    <p>Vous avez surement déjà pu apercevoir des sites pas très pratiques ou pas très jolies. Mais avec moi je peux vous assurer que chaque site que je réalise est 100% facile d'utilisation et jolie !</p>
+                    <p>Mockup, Wireframes, Prototypes : j’accorde une énorme importance à l’Experience Utilisateur. Tout ce que je conçois respecte les règles de base de l’UX, l’accessibilité ainsi que la facilité de navigation des sites ou appli sur lesquels je travaille sont grandement réfléchis.</p>
                 </div>
             </div>
         </section>
