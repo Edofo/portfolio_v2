@@ -55,7 +55,7 @@ const Portfolio = () => {
             {
                 id: 10,
                 title: 'Color Telecom', 
-                img: 'https://i.gyazo.com/824c2489ce711d6064106492decb6ad1.png'
+                img: 'https://i.gyazo.com/f0290740e672edccdeacaeade1c3eec0.png'
             },
             {
                 id: 11,
