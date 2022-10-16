@@ -1,7 +1,7 @@
-import CustomButton from "./CustomButton"
-import styles from '../styles/Navbar.module.scss'
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+
+import styles from '@styles/Navbar.module.scss'
 
 const Navbar = () => {
 

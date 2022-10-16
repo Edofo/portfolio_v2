@@ -1,0 +1,30 @@
+{
+    "framework": [
+        {
+            "title": "ReactJS",
+            "number": "92"
+        },
+        {
+            "title": "NextJS",
+            "number": "86"
+        },
+        {
+            "title": "Laravel",
+            "number": "67"
+        }
+    ],
+    "languages": [
+        {
+            "title": "HTML",
+            "number": "100"
+        },
+        {
+            "title": "CSS/SASS",
+            "number": "99"
+        },
+        {
+            "title": "NodeJS",
+            "number": "90"
+        }
+    ]
+}

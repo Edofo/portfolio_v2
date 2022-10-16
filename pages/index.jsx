@@ -9,7 +9,7 @@ import Skill from '../composants/home/Skill'
 import Navbar from '../composants/Navbar'
 import Particle from '../composants/Particle'
 
-export default function Home() {
+const Home = () => {
     return (
         <div>
 
@@ -40,3 +40,5 @@ export default function Home() {
         </div>
     )
 }
+
+export default Home

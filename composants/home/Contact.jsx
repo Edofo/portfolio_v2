@@ -1,13 +1,13 @@
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 
-import styles from '../../styles/home/Contact.module.scss'
+import styles from '@styles/home/Contact.module.scss'
 
 const Contact = () => {
 
     const [send, setSend] = useState(false)
 
-    emailjs.init('user_GxrzHM20XGsxuTbRkA6Pg');
+    emailjs.init(process.env.NEXT_PUBLIC_EMAIL_USER);
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -18,7 +18,7 @@ const Contact = () => {
             body: e.target.desc.value
         }
 
-        emailjs.send('service_17hkypn','template_7cyil0m', params)
+        emailjs.send(process.env.NEXT_PUBLIC_EMAIL_SERVICE, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE, params)
         .then(() => {
 
             const audio = new Audio('check.mp3');

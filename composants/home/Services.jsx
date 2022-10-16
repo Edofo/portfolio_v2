@@ -1,4 +1,4 @@
-import styles from '../../styles/home/Services.module.scss'
+import styles from '@styles/home/Services.module.scss'
 
 const Services = () => {
     return (

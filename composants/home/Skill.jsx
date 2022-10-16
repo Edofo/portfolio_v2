@@ -1,38 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
-import styles from '../../styles/home/Skill.module.scss'
+import { useEffect, useState } from 'react'
+
+import styles from '@styles/home/Skill.module.scss'
+
+import listSkill from '@utils/skill.json'
 
 const Skill = () => {
-
-    const listSkill = {
-        framework: [
-            {
-                title: 'ReactJS',
-                number: '92'
-            },
-            {
-                title: 'NextJS',
-                number: '86'
-            },
-            {
-                title: 'Laravel',
-                number: '67'
-            },
-        ],
-        languages: [
-            {
-                title: 'HTML',
-                number: '100'
-            },
-            {
-                title: 'CSS/SASS',
-                number: '99'
-            },
-            {
-                title: 'NodeJS',
-                number: '90'
-            },
-        ],
-    }
 
     const [selectInfos, setSelectInfos] = useState('framework')
     const [listSkillState, setListSkillState] = useState(listSkill['framework'])
@@ -41,6 +13,7 @@ const Skill = () => {
 
         setListSkillState(listSkill[selectInfos])
         
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectInfos])
 
     return (

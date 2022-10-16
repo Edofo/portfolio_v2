@@ -1,9 +1,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
-import styles from '../../styles/home/About.module.scss'
-
-import CustomButton from "../CustomButton"
+import styles from '@styles/home/About.module.scss'
 
 const About = () => {
     
@@ -39,10 +37,19 @@ const About = () => {
     const [selectInfos, setSelectInfos] = useState('bio')
     const [textInfos, setTextInfos] = useState(text['bio'])
 
-    useEffect(async() => {
+    useEffect(() => {
+       
+        handleTextEdit()
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [selectInfos])
+
+    const handleTextEdit = async() => {
+
         const textEdit = document.querySelector('#text-about')   
         textEdit.style.transform = 'translateX(100px)'
         textEdit.style.opacity = '0'
+        
         setTimeout(() => {
             textEdit.style.transform = 'translateX(-100px)'
         }, 200)
@@ -53,7 +60,7 @@ const About = () => {
             setTextInfos(text[selectInfos])
         }, 400)
 
-    }, [selectInfos])
+    }
 
 
     return (
@@ -61,7 +68,8 @@ const About = () => {
             <h2>À PROPOS</h2>
             <div className={`${styles.aboutBody} subsection`}>
                 <div className={styles.aboutImage}>
-                    <img id='img-about' alt='photo' src='/images/phoyo.jpg' />
+{                    // eslint-disable-next-line @next/next/no-img-element
+}                    <img id='img-about' alt='photo' src='/images/phoyo.jpg' />
                     {
                         imgInfos.width >= 0 && <div id='div-img-about' style={{width: `${imgInfos.width}px`, height: `${imgInfos.height}px`}}/>
                     }

@@ -1,4 +1,4 @@
-import styles from '../styles/CustomButton.module.scss'
+import styles from '@styles/CustomButton.module.scss'
 
 const CustomButton = (props) => {
     return (
